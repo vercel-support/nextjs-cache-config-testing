@@ -2,6 +2,6 @@
 
 module.exports = (req, res) => {
   let date = new Date().toString()
-  res.setHeader('Cache-control', 's-maxage=1, stale-while-revalidate=10')
+  res.setHeader('Cache-control', 's-maxage=5, stale-while-revalidate=10')
   res.end(date)
 }
